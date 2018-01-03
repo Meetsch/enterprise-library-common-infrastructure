@@ -21,7 +21,7 @@ using Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design;
 
 [assembly: ComVisible(false)]
 
-#if !NETSTANDARD2_0
+#if NET471
 [assembly: HandlesSection(ConfigurationSourceSection.SectionName)]
 [assembly: HandlesSection(AppSettingsDesignTime.AppSettingsSectionName)]
 
