@@ -9,16 +9,19 @@ using Microsoft.Practices.EnterpriseLibrary.Common.Configuration;
 using Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design;
 
 [assembly: ReliabilityContract(Consistency.WillNotCorruptState, Cer.None)]
+#if !TRIMBLE
 [assembly: AssemblyTitle("Enterprise Library Shared Library")]
 [assembly: AssemblyDescription("Enterprise Library Shared Library")]
 [assembly: AssemblyVersion("6.0.0.0")]
 [assembly: AssemblyFileVersion("6.0.1311.0")]
 [assembly: AssemblyInformationalVersion("6.0.1311-prerelease")]
+#endif
 
 [assembly: AllowPartiallyTrustedCallers]
 
 [assembly: ComVisible(false)]
 
+#if !NETSTANDARD2_0
 [assembly: HandlesSection(ConfigurationSourceSection.SectionName)]
 [assembly: HandlesSection(AppSettingsDesignTime.AppSettingsSectionName)]
 
@@ -33,3 +36,4 @@ using Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design;
             TitleResourceType = typeof(DesignResources),
             TitleResourceName = "AddConfigurationSourcesTitle",
             CommandModelTypeName = ConfigurationSourcesDesignTime.CommandTypeNames.AddConfigurationSourcesBlockCommand)]
+#endif
