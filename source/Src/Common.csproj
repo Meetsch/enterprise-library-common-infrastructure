@@ -2,24 +2,28 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net471</TargetFrameworks>
-    <Company>Microsoft; Trimble</Company>
     <FileVersion>6.0.1311.0</FileVersion>
     <InformationalVersion>6.0.1311-prerelease</InformationalVersion>
-    <Product>Microsoft Enterprise Library</Product>
-    <Title>Enterprise Library Shared Library</Title>
-    <Description>Enterprise Library Shared Library</Description>
+    <Title>Enterprise Library Shared Library - .NET Standard</Title>
     <Version>6.0.1311.0</Version>
-    <Copyright></Copyright>
     <AssemblyName>Microsoft.Practices.EnterpriseLibrary.Common</AssemblyName>
     <RootNamespace>Microsoft.Practices.EnterpriseLibrary.Common</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Authors>Microsoft; patterns-and-practices; Trimble; matthewjonesco</Authors>
     <PackageId>EnterpriseLibrary.Common.NETStandard</PackageId>
+    <Authors>Microsoft; patterns-and-practices; Trimble; matthewjonesco</Authors>
+    <Company>Microsoft; Trimble</Company>
+    <Product>Microsoft Enterprise Library</Product>
+    <Description>Enterprise Library Shared Library - .NET Standard</Description>
+    <Copyright></Copyright>
     <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/MatthewJonesCo/enterprise-library-common-infrastructure</PackageProjectUrl>
     <PackageIconUrl>http://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/MatthewJonesCo/enterprise-library-common-infrastructure</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <PackageTags>entlib Enterprise Library common core LOB Trimble</PackageTags>
   </PropertyGroup>
 
@@ -58,10 +62,6 @@
     <DebugSymbols>true</DebugSymbols>
     <DefineConstants>TRACE;DEBUG;TRIMBLE</DefineConstants>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="Common.nuspec" />
-  </ItemGroup>
 
   <ItemGroup>
     <Reference Include="System.Configuration" Condition="'$(TargetFramework)'=='net471'" />
