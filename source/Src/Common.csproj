@@ -18,7 +18,7 @@
     <Company>Microsoft; Trimble</Company>
     <Product>Microsoft Enterprise Library</Product>
     <Description>Enterprise Library Shared Library - .NET Standard</Description>
-    <Copyright></Copyright>
+    <Copyright>Copyright (c) 2017 Trimble, Inc.</Copyright>
     <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/MatthewJonesCo/enterprise-library-common-infrastructure</PackageProjectUrl>
     <PackageIconUrl>http://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>
