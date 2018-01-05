@@ -4,7 +4,7 @@
     <TargetFrameworks>netstandard2.0;net471</TargetFrameworks>
     <FileVersion>6.0.1311.0</FileVersion>
     <InformationalVersion>6.0.1311-prerelease</InformationalVersion>
-    <Title>Non-Configurable Enterprise Library Shared Library .NET Standard</Title>
+    <Title>Non-Configurable Enterprise Library Shared Library</Title>
     <Version>6.0.1311.0</Version>
     <AssemblyName>Microsoft.Practices.EnterpriseLibrary.Common</AssemblyName>
     <RootNamespace>Microsoft.Practices.EnterpriseLibrary.Common</RootNamespace>
