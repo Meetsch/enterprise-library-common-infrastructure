@@ -2,31 +2,13 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net471</TargetFrameworks>
-    <FileVersion>6.0.1311.0</FileVersion>
-    <InformationalVersion>6.0.1311-prerelease</InformationalVersion>
     <Title>Non-Configurable Enterprise Library Shared Library</Title>
-    <Version>6.0.1311.0</Version>
     <AssemblyName>Microsoft.Practices.EnterpriseLibrary.Common</AssemblyName>
     <RootNamespace>Microsoft.Practices.EnterpriseLibrary.Common</RootNamespace>
-  </PropertyGroup>
-
-  <PropertyGroup>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageId>NonConfigurable.EnterpriseLibrary.Common</PackageId>
-    <Authors>Microsoft; patterns-and-practices; Trimble; matthewjonesco</Authors>
-    <Company>Microsoft; Trimble</Company>
-    <Product>Non-Configurable Enterprise Library</Product>
     <Description>Non-Configurable Enterprise Library Shared Library based on .NETStandard</Description>
-    <Copyright>Copyright (c) 2017 Trimble, Inc.</Copyright>
-    <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/MatthewJonesCo/enterprise-library-common-infrastructure</PackageProjectUrl>
-    <PackageIconUrl>http://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>
-    <RepositoryUrl>https://github.com/MatthewJonesCo/enterprise-library-common-infrastructure</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageTags>entlib Enterprise Library common core LOB Trimble non-configurable .NETStandard</PackageTags>
   </PropertyGroup>
-
+  
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningsAsErrors />
@@ -66,14 +48,6 @@
   <ItemGroup>
     <Reference Include="System.Configuration" Condition="'$(TargetFramework)'=='net471'" />
     <Reference Include="System.Configuration.Install" Condition="'$(TargetFramework)'=='net471'" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="..\GlobalAssemblyInfo.cs" Link="GlobalAssemblyInfo.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="..\Common.licenseheader" Link="Common.licenseheader" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.0'">
