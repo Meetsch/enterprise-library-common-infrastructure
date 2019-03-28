@@ -4,6 +4,7 @@ using System;
 using System.Reflection;
 
 [assembly: CLSCompliant(true)]
+#if !TRIMBLE
 [assembly: AssemblyProduct("Microsoft Enterprise Library")]
 [assembly: AssemblyCompany("Microsoft Corporation")]
 
@@ -13,5 +14,6 @@ using System.Reflection;
 [assembly: AssemblyConfiguration("Release")]
 #endif
 [assembly: AssemblyCopyright("")]
+#endif
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

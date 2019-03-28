@@ -4,6 +4,15 @@ using System.Diagnostics;
 
 namespace Microsoft.Practices.EnterpriseLibrary.Common.Instrumentation
 {
+    #if NETSTANDARD2_0
+    /// <summary>
+    /// Placeholder for non-existent System.Diagnostics.PerformanceCounter
+    /// </summary>
+    public class PerformanceCounter
+    {
+    }
+    #endif
+
     /// <summary>
     /// Constructs an instance name for a <see cref="PerformanceCounter"></see> following embedded
     /// formatting rules.
